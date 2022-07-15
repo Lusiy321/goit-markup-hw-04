@@ -36,6 +36,7 @@ p {
 img {
 	display: block;
 }
+
 svg {
 	margin: 0;
 	padding: 0;
@@ -110,9 +111,11 @@ header div.contacts {
 	padding-top: 32px;
 	margin-left: auto;
 }
+
 header div.contacts ul {
 	align-items: flex-end;
 }
+
 header div.contacts ul li a {
 	color: var(--contacts-color);
 	font-weight: 500;
@@ -121,11 +124,13 @@ header div.contacts ul li a {
 	letter-spacing: 0.02em;
 	text-decoration: none;
 }
+
 header div.contacts svg.icon-mail {
 	display: inline-block;
 	fill: var(--contacts-color);
 	margin-right: 10px;
 }
+
 header div.contacts svg.icon-mail:hover {
 	fill: var(--main-hover-color);
 }
@@ -223,10 +228,12 @@ section.competension ul li p {
 	line-height: 1.71;
 	letter-spacing: 0.03em;
 }
+
 section.competension ul.boxs div.box-block {
 	align-items: center;
 	justify-content: center;
 }
+
 section.competension li.box-icons {
 	width: 270px;
 	height: 120px;
@@ -235,9 +242,11 @@ section.competension li.box-icons {
 	border-radius: 4px;
 	margin-bottom: 30px;
 }
+
 section.competension svg.icon-inform {
 	margin: 25px 100px;
 }
+
 /* END COMPETENSION BLOCK*/
 
 /* ABOUT BUSINESS (INDEX) */
@@ -301,12 +310,14 @@ ul.socials {
 	gap: 10px;
 	align-items: center;
 }
+
 ul.socials li {
 	width: 44px;
 	height: 44px;
 	border-radius: 100%;
 	margin-bottom: 30px;
 }
+
 ul.socials li:hover {
 	width: 44px;
 	height: 44px;
@@ -314,6 +325,7 @@ ul.socials li:hover {
 	margin-bottom: 30px;
 	background-color: var(--main-hover-color);
 }
+
 a.socials-link {
 	width: 44px;
 	height: 44px;
@@ -321,6 +333,7 @@ a.socials-link {
 	align-items: center;
 	justify-content: center;
 }
+
 svg.socials-icon {
 	width: 20px;
 	height: 20px;
@@ -347,10 +360,12 @@ svg.icon-company {
 	border: 1px solid var(--social-background);
 	border-radius: 4px;
 }
+
 svg.icon-company:hover {
 	fill: var(--main-hover-color);
 	border: 1px solid var(--main-hover-color);
 }
+
 /*  List navigation (Portfolio) */
 section ul.nav-button {
 	justify-content: center;
@@ -359,7 +374,7 @@ section ul.nav-button {
 
 section ul.nav-button li button {
 	color: var(--main-text-color);
-
+	margin-right: 8px;
 	font-family: "Roboto", sans-serif;
 	font-weight: 500;
 	font-size: 16px;
@@ -396,6 +411,7 @@ section ul.prodjects li div.boxes {
 	border: 1px solid var(--border-block-color);
 	border-top: none;
 }
+
 section ul.prodjects li:hover {
 	cursor: pointer;
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -424,13 +440,16 @@ footer {
 	border: 1px solid var(--border-block-color);
 	padding: 60px 0;
 }
+
 footer div.footer {
 	display: flex;
 	align-items: baseline;
 }
+
 footer div.footer-contacts {
 	margin-right: 70px;
 }
+
 footer p.f-logotype a.f-logo {
 	color: var(--main-bg-color);
 	font-family: "Raleway", sans-serif;
@@ -480,6 +499,7 @@ footer address p.f-contacts a:hover {
 footer address p.f-contacts a:focus {
 	color: var(--second-bg-color);
 }
+
 footer h3.footer-social {
 	font-family: "Roboto" sans-serif;
 	font-style: normal;
@@ -491,11 +511,13 @@ footer h3.footer-social {
 	color: var(--main-bg-color);
 	margin-bottom: 20px;
 }
+
 ul.socials-footer {
 	justify-content: center;
 	gap: 10px;
 	align-items: center;
 }
+
 ul.socials-footer li {
 	width: 44px;
 	height: 44px;
@@ -503,6 +525,7 @@ ul.socials-footer li {
 	margin-bottom: 30px;
 	background: rgba(255, 255, 255, 0.1);
 }
+
 ul.socials-footer li:hover {
 	width: 44px;
 	height: 44px;
@@ -516,6 +539,7 @@ svg.icon-footer {
 	height: 20px;
 	fill: var(--main-bg-color);
 }
+
 svg.icon-footer:hover {
 	width: 20px;
 	height: 20px;
