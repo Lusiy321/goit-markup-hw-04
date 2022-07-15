@@ -223,8 +223,11 @@ section.competension ul li p {
 	line-height: 1.71;
 	letter-spacing: 0.03em;
 }
-section.competension li.box-icons p {
-	display: block;
+section.competension ul.boxs div.box-block {
+	align-items: center;
+	justify-content: center;
+}
+section.competension li.box-icons {
 	width: 270px;
 	height: 120px;
 	background-color: var(--second-bg-color);
@@ -294,27 +297,41 @@ section.team ul li p {
 
 /* SOCIALS ICON TEAM*/
 ul.socials {
-	justify-content: space-around;
-}
-ul.socials li {
-	margin-bottom: 30px;
+	justify-content: center;
+	gap: 10px;
 	align-items: center;
 }
-
-svg.socials-icon {
+ul.socials li {
 	width: 44px;
 	height: 44px;
-	padding: 12px;
+	border-radius: 100%;
+	margin-bottom: 30px;
+}
+ul.socials li:hover {
+	width: 44px;
+	height: 44px;
+	border-radius: 100%;
+	margin-bottom: 30px;
+	background-color: var(--main-hover-color);
+}
+a.socials-link {
+	width: 44px;
+	height: 44px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+svg.socials-icon {
+	width: 20px;
+	height: 20px;
 	fill: var(--social-background);
 }
 
 svg.socials-icon:hover {
-	width: 44px;
-	height: 44px;
-	padding: 12px;
+	width: 20px;
+	height: 20px;
 	fill: var(--main-bg-color);
 	background-color: var(--main-hover-color);
-	border-radius: 100%;
 }
 
 /* SOCIALS ICON TEAM*/
@@ -379,6 +396,10 @@ section ul.prodjects li div.boxes {
 	border: 1px solid var(--border-block-color);
 	border-top: none;
 }
+section ul.prodjects li:hover {
+	cursor: pointer;
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 section ul.prodjects li h3 {
 	font-weight: 700;
@@ -405,6 +426,7 @@ footer {
 }
 footer div.footer {
 	display: flex;
+	align-items: baseline;
 }
 footer div.footer-contacts {
 	margin-right: 70px;
@@ -467,24 +489,37 @@ footer h3.footer-social {
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
 	color: var(--main-bg-color);
-	padding-top: 10px;
 	margin-bottom: 20px;
 }
-svg.icon-footer {
+ul.socials-footer {
+	justify-content: center;
+	gap: 10px;
+	align-items: center;
+}
+ul.socials-footer li {
 	width: 44px;
 	height: 44px;
-	padding: 12px;
-	margin-right: 10px;
-	fill: var(--main-bg-color);
 	border-radius: 100%;
+	margin-bottom: 30px;
 	background: rgba(255, 255, 255, 0.1);
 }
-svg.icon-footer:hover {
+ul.socials-footer li:hover {
 	width: 44px;
 	height: 44px;
-	padding: 12px;
-	fill: var(--main-bg-color);
 	border-radius: 100%;
+	margin-bottom: 30px;
+	background-color: var(--main-hover-color);
+}
+
+svg.icon-footer {
+	width: 20px;
+	height: 20px;
+	fill: var(--main-bg-color);
+}
+svg.icon-footer:hover {
+	width: 20px;
+	height: 20px;
+	fill: var(--main-bg-color);
 	background: var(--main-hover-color);
 }
 
