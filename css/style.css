@@ -135,11 +135,11 @@ header div.contacts svg.icon-mail:hover {
 	fill: var(--main-hover-color);
 }
 
-header div.contacts svg.icon-mail:focus {
-	fill: var(--content-bg-color);
+header li a:hover {
+	color: var(--main-hover-color);
 }
 
-header li a:hover {
+header li a:focus {
 	color: var(--main-hover-color);
 }
 
@@ -147,8 +147,9 @@ header div.contacts ul li a:hover {
 	color: var(--main-hover-color);
 }
 
-header div.contacts ul li a:focus {
-	color: var(--content-bg-color);
+header div.contacts li a:focus {
+	color: var(--main-hover-color);
+	fill: currentColor;
 }
 
 /* END HEADER */
@@ -159,10 +160,9 @@ section.main-screen {
 	height: 600px;
 	padding-top: 200px;
 	padding-bottom: 200px;
-	background-image: url(/images/background.jpg);
+	background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background.jpg);
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-color: rgba(47, 48, 58, 0.4);
 	align-items: center;
 	text-align: center;
 }
@@ -191,6 +191,18 @@ section.main-screen button {
 }
 
 section.main-screen button:hover {
+	color: var(--main-text-color);
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.87;
+	background: var(--second-bg-color);
+	border-radius: 4px;
+	padding: 10px 32px;
+	border: 1px solid var(--second-bg-color);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+section.main-screen button:focus {
 	color: var(--main-text-color);
 	font-weight: 700;
 	font-size: 16px;
@@ -318,12 +330,22 @@ ul.socials li {
 	margin-bottom: 30px;
 }
 
-ul.socials li:hover {
+ul.socials li a:hover {
 	width: 44px;
 	height: 44px;
 	border-radius: 100%;
 	margin-bottom: 30px;
 	background-color: var(--main-hover-color);
+	fill: var(--main-bg-color);
+}
+
+ul.socials li a:focus {
+	width: 44px;
+	height: 44px;
+	border-radius: 100%;
+	margin-bottom: 30px;
+	background-color: var(--main-hover-color);
+	fill: var(--main-bg-color);
 }
 
 a.socials-link {
@@ -340,7 +362,15 @@ svg.socials-icon {
 	fill: var(--social-background);
 }
 
+
 svg.socials-icon:hover {
+	width: 20px;
+	height: 20px;
+	fill: var(--main-bg-color);
+	background-color: var(--main-hover-color);
+}
+
+svg.socials-icon:focus {
 	width: 20px;
 	height: 20px;
 	fill: var(--main-bg-color);
@@ -366,6 +396,30 @@ svg.icon-company:hover {
 	border: 1px solid var(--main-hover-color);
 }
 
+li.company-icons a {
+	display: block;
+	width: 170px;
+	height: 92px;
+}
+
+a.company-link:hover {
+	width: 170px;
+	height: 92px;
+	color: var(--main-hover-color);
+	fill: currentColor;
+	border: 1px solid var(--main-hover-color);
+	border-radius: 4px;
+}
+
+a.company-link:focus {
+	width: 170px;
+	height: 92px;
+	color: var(--main-hover-color);
+	stroke: currentColor;
+	border: 1px solid var(--main-hover-color);
+	border-radius: 4px;
+}
+
 /*  List navigation (Portfolio) */
 section ul.nav-button {
 	justify-content: center;
@@ -387,6 +441,18 @@ section ul.nav-button li button {
 }
 
 section ul.nav-button li button:hover {
+	color: var(--main-bg-color);
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.62;
+	background: var(--main-hover-color);
+	border-radius: 4px;
+	padding: 6px 22px;
+	border: 1px solid var(--main-hover-color);
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+section ul.nav-button li button:focus {
 	color: var(--main-bg-color);
 	font-weight: 500;
 	font-size: 16px;
@@ -497,7 +563,7 @@ footer address p.f-contacts a:hover {
 }
 
 footer address p.f-contacts a:focus {
-	color: var(--second-bg-color);
+	color: var(--main-hover-color);
 }
 
 footer h3.footer-social {
@@ -527,6 +593,14 @@ ul.socials-footer li {
 }
 
 ul.socials-footer li:hover {
+	width: 44px;
+	height: 44px;
+	border-radius: 100%;
+	margin-bottom: 30px;
+	background-color: var(--main-hover-color);
+}
+
+ul.socials-footer li a:focus {
 	width: 44px;
 	height: 44px;
 	border-radius: 100%;
