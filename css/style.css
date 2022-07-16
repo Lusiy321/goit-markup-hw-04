@@ -107,6 +107,14 @@ header nav ul li a {
 	text-decoration: none;
 }
 
+header nav ul li a:hover {
+	color: var(--main-hover-color);
+}
+
+header nav ul li a:focus {
+	color: var(--main-hover-color);
+}
+
 header div.contacts {
 	padding-top: 32px;
 	margin-left: auto;
@@ -131,25 +139,42 @@ header div.contacts svg.icon-mail {
 	margin-right: 10px;
 }
 
-header div.contacts svg.icon-mail:hover {
+header div.contacts svg.icon-phone {
+	display: inline-block;
+	fill: var(--contacts-color);
+	margin-right: 10px;
+}
+
+header div.contacts a:hover svg.icon-mail {
 	fill: var(--main-hover-color);
-}
-
-header li a:hover {
 	color: var(--main-hover-color);
 }
 
-header li a:focus {
+header div.contacts ul li a:hover svg.icon-phone {
+	fill: var(--main-hover-color);
 	color: var(--main-hover-color);
 }
 
-header div.contacts ul li a:hover {
+header div.contacts:focus {
+	fill: var(--main-hover-color);
 	color: var(--main-hover-color);
 }
+
+header div.contacts li a:hover {
+	color: var(--main-hover-color);
+}
+
 
 header div.contacts li a:focus {
 	color: var(--main-hover-color);
-	fill: currentColor;
+}
+
+header div.contacts li a:focus svg.icon-mail {
+	fill: var(--main-hover-color);
+}
+
+header div.contacts li a:focus svg.icon-phone {
+	fill: var(--main-hover-color);
 }
 
 /* END HEADER */
@@ -318,42 +343,20 @@ section.team ul li p {
 
 /* SOCIALS ICON TEAM*/
 ul.socials {
-	justify-content: center;
-	gap: 10px;
-	align-items: center;
-}
-
-ul.socials li {
-	width: 44px;
-	height: 44px;
-	border-radius: 100%;
-	margin-bottom: 30px;
-}
-
-ul.socials li a:hover {
-	width: 44px;
-	height: 44px;
-	border-radius: 100%;
-	margin-bottom: 30px;
-	background-color: var(--main-hover-color);
-	fill: var(--main-bg-color);
-}
-
-ul.socials li a:focus {
-	width: 44px;
-	height: 44px;
-	border-radius: 100%;
-	margin-bottom: 30px;
-	background-color: var(--main-hover-color);
-	fill: var(--main-bg-color);
-}
-
-a.socials-link {
-	width: 44px;
-	height: 44px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	gap: 10px;
+}
+
+ul.socials li a.socials-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	margin-bottom: 30px;
 }
 
 svg.socials-icon {
@@ -362,19 +365,30 @@ svg.socials-icon {
 	fill: var(--social-background);
 }
 
-
-svg.socials-icon:hover {
-	width: 20px;
-	height: 20px;
-	fill: var(--main-bg-color);
+ul.socials li a.socials-link:hover {
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	margin-bottom: 30px;
 	background-color: var(--main-hover-color);
+	fill: var(--main-bg-color);
 }
 
-svg.socials-icon:focus {
-	width: 20px;
-	height: 20px;
+ul.socials li a.socials-link:hover svg.socials-icon {
 	fill: var(--main-bg-color);
+}
+
+ul.socials li a.socials-link:focus {
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	margin-bottom: 30px;
 	background-color: var(--main-hover-color);
+	fill: var(--main-bg-color);
+}
+
+ul.socials li a.socials-link:focus svg.socials-icon {
+	fill: var(--main-bg-color);
 }
 
 /* SOCIALS ICON TEAM*/
@@ -415,9 +429,12 @@ a.company-link:focus {
 	width: 170px;
 	height: 92px;
 	color: var(--main-hover-color);
-	stroke: currentColor;
 	border: 1px solid var(--main-hover-color);
 	border-radius: 4px;
+}
+
+a.company-link:focus svg.icon-company {
+	fill: var(--main-hover-color);
 }
 
 /*  List navigation (Portfolio) */
@@ -579,33 +596,21 @@ footer h3.footer-social {
 }
 
 ul.socials-footer {
+	display: flex;
+	align-items: center;
 	justify-content: center;
 	gap: 10px;
+
+}
+
+a.socials-link-icon {
+	display: flex;
 	align-items: center;
-}
-
-ul.socials-footer li {
+	justify-content: center;
 	width: 44px;
 	height: 44px;
-	border-radius: 100%;
-	margin-bottom: 30px;
+	border-radius: 50%;
 	background: rgba(255, 255, 255, 0.1);
-}
-
-ul.socials-footer li:hover {
-	width: 44px;
-	height: 44px;
-	border-radius: 100%;
-	margin-bottom: 30px;
-	background-color: var(--main-hover-color);
-}
-
-ul.socials-footer li a:focus {
-	width: 44px;
-	height: 44px;
-	border-radius: 100%;
-	margin-bottom: 30px;
-	background-color: var(--main-hover-color);
 }
 
 svg.icon-footer {
@@ -614,11 +619,12 @@ svg.icon-footer {
 	fill: var(--main-bg-color);
 }
 
-svg.icon-footer:hover {
-	width: 20px;
-	height: 20px;
-	fill: var(--main-bg-color);
-	background: var(--main-hover-color);
+a.socials-link-icon:hover {
+	background-color: var(--main-hover-color);
+}
+
+a.socials-link-icon:focus {
+	background-color: var(--main-hover-color);
 }
 
 /* END FOOTER */
