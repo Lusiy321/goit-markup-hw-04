@@ -267,22 +267,20 @@ section.competension ul li p {
 }
 
 section.competension ul.boxs div.box-block {
+	display: flex;
 	align-items: center;
 	justify-content: center;
+	width: 270px;
+	height: 120px;
 }
 
 section.competension li.box-icons {
-	width: 270px;
-	height: 120px;
 	background-color: var(--second-bg-color);
 	border: 1px solid var(--second-bg-color);
 	border-radius: 4px;
 	margin-bottom: 30px;
 }
 
-section.competension svg.icon-inform {
-	margin: 25px 100px;
-}
 
 /* END COMPETENSION BLOCK*/
 
@@ -339,6 +337,7 @@ section.team ul li p {
 	line-height: 1.18;
 	text-align: center;
 	letter-spacing: 0.03em;
+	margin-bottom: 16px;
 }
 
 /* SOCIALS ICON TEAM*/
@@ -356,7 +355,6 @@ ul.socials li a.socials-link {
 	width: 44px;
 	height: 44px;
 	border-radius: 50%;
-	margin-bottom: 30px;
 }
 
 svg.socials-icon {
@@ -369,7 +367,6 @@ ul.socials li a.socials-link:hover {
 	width: 44px;
 	height: 44px;
 	border-radius: 50%;
-	margin-bottom: 30px;
 	background-color: var(--main-hover-color);
 	fill: var(--main-bg-color);
 }
@@ -382,7 +379,6 @@ ul.socials li a.socials-link:focus {
 	width: 44px;
 	height: 44px;
 	border-radius: 50%;
-	margin-bottom: 30px;
 	background-color: var(--main-hover-color);
 	fill: var(--main-bg-color);
 }
@@ -397,44 +393,55 @@ ul.socials li a.socials-link:focus svg.socials-icon {
 /* CLIENT BLOCK */
 
 svg.icon-company {
+	fill: var(--social-background);
+
+}
+
+ul.company-icons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 30px;
+}
+
+ul.company-icons li {
 	width: 170px;
 	height: 92px;
-	padding: 16px 32px;
-	fill: var(--social-background);
+
+}
+
+a.company-link {
+	width: 170px;
+	height: 92px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	border: 1px solid var(--social-background);
 	border-radius: 4px;
-}
 
-svg.icon-company:hover {
-	fill: var(--main-hover-color);
-	border: 1px solid var(--main-hover-color);
-}
-
-li.company-icons a {
-	display: block;
-	width: 170px;
-	height: 92px;
 }
 
 a.company-link:hover {
-	width: 170px;
-	height: 92px;
 	color: var(--main-hover-color);
-	fill: currentColor;
-	border: 1px solid var(--main-hover-color);
-	border-radius: 4px;
+	fill: var(--main-hover-color);
+	border-color: var(--main-hover-color);
+
+}
+
+a.company-link:hover svg.icon-company {
+	fill: var(--main-hover-color);
 }
 
 a.company-link:focus {
 	width: 170px;
 	height: 92px;
 	color: var(--main-hover-color);
-	border: 1px solid var(--main-hover-color);
-	border-radius: 4px;
+	border-color: var(--main-hover-color);
 }
 
 a.company-link:focus svg.icon-company {
 	fill: var(--main-hover-color);
+
 }
 
 /*  List navigation (Portfolio) */
