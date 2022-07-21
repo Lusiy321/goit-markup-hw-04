@@ -15,7 +15,7 @@
     <title>Web Studio</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
         <!-- LOGO -->
         <div class="logo">
@@ -62,7 +62,7 @@
           <br />
           для вашего бизнеса
         </h1>
-        <button type="button">Заказать услугу</button>
+        <button type="button" data-modal-open>Заказать услугу</button>
       </section>
       <!-- Competension Information -->
       <section class="section competension">
@@ -148,29 +148,29 @@
         <div class="container">
           <h2 class="main-title-1">Чем мы занимаемся</h2>
           <ul>
-            <li>
-              <img
+            <li><div class="img-box"><img
                 src="images/about-icon-1.jpg"
                 alt="Програмирование"
                 width="370"
                 height="294"
-              />
+              /> <div class="text-box"><h3>десктопные приложения</h3></div>
+            </div>              
             </li>
-            <li>
+            <li><div class="img-box">
               <img
                 src="images/about-icon-2.jpg"
                 alt="Мобильность"
                 width="370"
                 height="294"
-              />
+              /><div class="text-box"><h3>мобильние приложения</h3></div></div>
             </li>
-            <li>
+            <li><div class="img-box">
               <img
                 src="images/about-icon-3.jpg"
                 alt="Планшет"
                 width="370"
                 height="294"
-              />
+              /><div class="text-box"><h3>дизайнерские решения</h3></div></div>
             </li>
           </ul>
         </div>
@@ -611,5 +611,12 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" data-modal-close class="modal-btn"><svg class="modal-icon" width="18" height="18"><use href="./images/sprite.svg#icon-close" ></use></svg></button>
+        </div>
+      </div>    
+    <script src="./js/modal.js"></script>
+    <script src="./js/header-scroll.js"></script>
   </body>
 </html>
